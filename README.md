@@ -54,7 +54,7 @@ TradingDataVisualization/
 │   ├── ILogger.cs
 │  	├── FileLogger.cs
 │  	
-TradingDataVisualization/
+TradingDataSimulator/
 ├── DataSimulator.cs           # High-performance data generator
 └── SimulatorProgram.cs        # Simulator console application
 ```
