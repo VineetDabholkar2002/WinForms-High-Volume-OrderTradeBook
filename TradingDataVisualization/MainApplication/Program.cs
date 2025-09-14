@@ -30,12 +30,10 @@ namespace TradingDataVisualization
             {
                 // Create logger instance
                 ILogger logger = new FileLogger();
-                var mainForm = new MainForm(logger);
-                Application.Run(mainForm);
 
                 logger.LogInformation("=== Application startup initiated ===");
 
-                // Run the main form with dependency injection
+                // Run the main form
                 Application.Run(new MainForm(logger));
 
                 logger.LogInformation("=== Application shutdown completed ===");
