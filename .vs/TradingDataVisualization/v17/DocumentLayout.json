@@ -1,0 +1,239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\infrastructure\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\infrastructure\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\workers\\ingestworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\workers\\ingestworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\mainapplication\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\mainapplication\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\datalayer\\datamessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\datalayer\\datamessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE084FF-07FA-4894-B492-B0FE7A8B41BC}|TradingDataSimulator\\TradingDataSimulator.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatasimulator\\datasimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE084FF-07FA-4894-B492-B0FE7A8B41BC}|TradingDataSimulator\\TradingDataSimulator.csproj|solutionrelative:tradingdatasimulator\\datasimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE084FF-07FA-4894-B492-B0FE7A8B41BC}|TradingDataSimulator\\TradingDataSimulator.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatasimulator\\simulatorprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE084FF-07FA-4894-B492-B0FE7A8B41BC}|TradingDataSimulator\\TradingDataSimulator.csproj|solutionrelative:tradingdatasimulator\\simulatorprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\logs\\filelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\logs\\filelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\workers\\metricslogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\workers\\metricslogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\datalayer\\columnorienteddatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\datalayer\\columnorienteddatastore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\mainapplication\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\mainapplication\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\mainapplication\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\mainapplication\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|c:\\users\\vinee\\downloads\\tradingsimulator\\tradingdatavisualization\\mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86B90842-661E-4343-BF46-A9608B3055EB}|TradingDataVisualization\\TradingDataVisualization.csproj|solutionrelative:tradingdatavisualization\\mainapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Infrastructure\\AppSettings.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\Infrastructure\\AppSettings.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Infrastructure\\AppSettings.cs",
+              "RelativeToolTip": "TradingDataVisualization\\Infrastructure\\AppSettings.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAD0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T07:38:08.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\MainApplication\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\MainForm.Designer.cs",
+              "RelativeToolTip": "TradingDataVisualization\\MainApplication\\MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T07:22:55.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\MainForm.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\MainApplication\\MainForm.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\MainForm.cs [Design]",
+              "RelativeToolTip": "TradingDataVisualization\\MainApplication\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T07:22:45.944Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\Program.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\MainApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\Program.cs",
+              "RelativeToolTip": "TradingDataVisualization\\MainApplication\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T18:35:00.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FileLogger.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Logs\\FileLogger.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\Logs\\FileLogger.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Logs\\FileLogger.cs",
+              "RelativeToolTip": "TradingDataVisualization\\Logs\\FileLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T18:34:25.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\MainForm.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\MainApplication\\MainForm.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\MainApplication\\MainForm.cs",
+              "RelativeToolTip": "TradingDataVisualization\\MainApplication\\MainForm.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwFoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T17:15:00.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IngestWorker.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Workers\\IngestWorker.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\Workers\\IngestWorker.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Workers\\IngestWorker.cs",
+              "RelativeToolTip": "TradingDataVisualization\\Workers\\IngestWorker.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T16:01:42.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SimulatorProgram.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\SimulatorProgram.cs",
+              "RelativeDocumentMoniker": "TradingDataSimulator\\SimulatorProgram.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\SimulatorProgram.cs",
+              "RelativeToolTip": "TradingDataSimulator\\SimulatorProgram.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAwK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T15:40:23.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataSimulator.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\DataSimulator.cs",
+              "RelativeDocumentMoniker": "TradingDataSimulator\\DataSimulator.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\DataSimulator.cs",
+              "RelativeToolTip": "TradingDataSimulator\\DataSimulator.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAUwJkBAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:35:06.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataMessage.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\DataLayer\\DataMessage.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\DataLayer\\DataMessage.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\DataLayer\\DataMessage.cs",
+              "RelativeToolTip": "TradingDataVisualization\\DataLayer\\DataMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:33:28.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ColumnOrientedDataStore.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\DataLayer\\ColumnOrientedDataStore.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\DataLayer\\ColumnOrientedDataStore.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\DataLayer\\ColumnOrientedDataStore.cs",
+              "RelativeToolTip": "TradingDataVisualization\\DataLayer\\ColumnOrientedDataStore.cs",
+              "ViewState": "AgIAAH8BAAAAAAAAAAAwwKABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:33:03.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MetricsLogger.cs",
+              "DocumentMoniker": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Workers\\MetricsLogger.cs",
+              "RelativeDocumentMoniker": "TradingDataVisualization\\Workers\\MetricsLogger.cs",
+              "ToolTip": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\Workers\\MetricsLogger.cs",
+              "RelativeToolTip": "TradingDataVisualization\\Workers\\MetricsLogger.cs",
+              "ViewState": "AgIAAJIBAAAAAAAAAAAYwJwBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:20:58.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

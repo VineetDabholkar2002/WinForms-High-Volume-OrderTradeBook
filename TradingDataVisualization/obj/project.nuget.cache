@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "fXi92iH0XV0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\TradingDataVisualization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vinee\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
+    "C:\\Users\\vinee\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

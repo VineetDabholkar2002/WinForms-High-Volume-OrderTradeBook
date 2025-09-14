@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uT2kHL/NGo0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\TradingDataSimulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vinee\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
