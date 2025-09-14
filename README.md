@@ -50,7 +50,7 @@ TradingDataVisualization/
 │   ├── SearchManager.cs           # Search functionality
 │   ├── TcpMessageHandler.cs       # TCP communication handler
 │   └── AppSettings.cs             # Configuration management
-├──Logs
+├── Logs
 │   ├── ILogger.cs
 │  	├── FileLogger.cs
 │  	
