@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\TradingDataVisualization.csproj": {}
+    "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataVisualization\\TradingDataVisualization.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\TradingDataVisualization.csproj": {
+    "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataVisualization\\TradingDataVisualization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\TradingDataVisualization.csproj",
+        "projectUniqueName": "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataVisualization\\TradingDataVisualization.csproj",
         "projectName": "TradingDataVisualization",
-        "projectPath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\TradingDataVisualization.csproj",
+        "projectPath": "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataVisualization\\TradingDataVisualization.csproj",
         "packagesPath": "C:\\Users\\vinee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataVisualization\\obj\\",
+        "outputPath": "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataVisualization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

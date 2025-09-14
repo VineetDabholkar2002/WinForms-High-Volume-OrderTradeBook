@@ -1,0 +1,49 @@
+[2025-09-14 20:38:45.308] [INFO] MainForm initialization started
+[2025-09-14 20:38:47.412] [INFO] IngestWorker initialized with TCP and Named Pipe support
+[2025-09-14 20:38:47.587] [INFO] MainForm initialization completed successfully
+[2025-09-14 20:38:47.588] [INFO] Starting data ingestion worker
+[2025-09-14 20:38:47.607] [INFO] TCP listener started on port 9999
+[2025-09-14 20:38:47.626] [INFO] Starting Named Pipe listener: TradingDataPipe
+[2025-09-14 20:38:47.637] [INFO] Message processing loop started
+[2025-09-14 20:38:47.750] [INFO] Data ingestion worker started successfully
+[2025-09-14 20:39:06.801] [INFO] TCP client connected from 127.0.0.1:50978
+[2025-09-14 20:39:43.533] [ERROR] TCP Client handler error
+[2025-09-14 20:39:43.534] [ERROR] Exception: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host..
+[2025-09-14 20:39:43.603] [ERROR]    at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at TradingDataVisualization.Workers.IngestWorker.HandleTcpClientAsync(TcpClient client, CancellationToken cancellationToken) in C:\Users\vinee\Desktop\Work\Projects\WinForms-High-Volume-OrderTradeBook\TradingDataVisualization\Workers\IngestWorker.cs:line 197
+[2025-09-14 21:58:22.781] [INFO] MainForm shutdown initiated
+[2025-09-14 21:58:22.786] [INFO] Stopping data ingestion worker
+[2025-09-14 21:58:22.794] [INFO] Message processing loop cancelled
+[2025-09-14 21:58:22.797] [INFO] Named Pipe listener stopped
+[2025-09-14 21:58:22.798] [ERROR] TCP Listener error
+[2025-09-14 21:58:22.799] [ERROR] Exception: The I/O operation has been aborted because of either a thread exit or an application request.
+[2025-09-14 21:58:22.822] [ERROR]    at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Net.Sockets.Socket>.GetResult(Int16 token)
+   at System.Net.Sockets.TcpListener.<AcceptTcpClientAsync>g__WaitAndWrap|32_0(ValueTask`1 task)
+   at TradingDataVisualization.Workers.IngestWorker.StartTcpListenerAsync(CancellationToken cancellationToken) in C:\Users\vinee\Desktop\Work\Projects\WinForms-High-Volume-OrderTradeBook\TradingDataVisualization\Workers\IngestWorker.cs:line 166
+[2025-09-14 21:58:22.822] [INFO] Data ingestion worker stopped successfully
+[2025-09-14 21:58:22.833] [INFO] MainForm shutdown completed
+[2025-09-14 21:58:23.019] [INFO] === Application startup initiated ===
+[2025-09-14 21:58:23.020] [INFO] MainForm initialization started
+[2025-09-14 21:58:23.027] [INFO] IngestWorker initialized with TCP and Named Pipe support
+[2025-09-14 21:58:23.044] [INFO] MainForm initialization completed successfully
+[2025-09-14 21:58:23.044] [INFO] Starting data ingestion worker
+[2025-09-14 21:58:23.045] [INFO] TCP listener started on port 9999
+[2025-09-14 21:58:23.045] [INFO] Starting Named Pipe listener: TradingDataPipe
+[2025-09-14 21:58:23.045] [INFO] Message processing loop started
+[2025-09-14 21:58:23.149] [INFO] Data ingestion worker started successfully
+[2025-09-14 21:58:24.659] [INFO] MainForm shutdown initiated
+[2025-09-14 21:58:24.659] [INFO] Stopping data ingestion worker
+[2025-09-14 21:58:24.659] [ERROR] TCP Listener error
+[2025-09-14 21:58:24.659] [INFO] Named Pipe listener stopped
+[2025-09-14 21:58:24.659] [ERROR] Exception: The I/O operation has been aborted because of either a thread exit or an application request.
+[2025-09-14 21:58:24.660] [ERROR]    at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Net.Sockets.Socket>.GetResult(Int16 token)
+   at System.Net.Sockets.TcpListener.<AcceptTcpClientAsync>g__WaitAndWrap|32_0(ValueTask`1 task)
+   at TradingDataVisualization.Workers.IngestWorker.StartTcpListenerAsync(CancellationToken cancellationToken) in C:\Users\vinee\Desktop\Work\Projects\WinForms-High-Volume-OrderTradeBook\TradingDataVisualization\Workers\IngestWorker.cs:line 166
+[2025-09-14 21:58:24.660] [INFO] Message processing loop cancelled
+[2025-09-14 21:58:24.660] [INFO] Data ingestion worker stopped successfully
+[2025-09-14 21:58:24.660] [INFO] MainForm shutdown completed
+[2025-09-14 21:58:24.750] [INFO] === Application shutdown completed ===

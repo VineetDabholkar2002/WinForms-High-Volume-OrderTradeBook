@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TradingDataVisualization")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5652fb9b78b7b8cbe1290a7f4905d9112f5b6481")]
 [assembly: System.Reflection.AssemblyProductAttribute("TradingDataVisualization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("High-Performance Trading Data Visualization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

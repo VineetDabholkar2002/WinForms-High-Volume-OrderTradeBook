@@ -26,7 +26,7 @@ namespace TradingDataSimulator
         private readonly DateTime _startTime;
 
         // Configuration
-        public int MessagesPerSecond { get; set; } = 1000;
+        public int MessagesPerSecond { get; set; } = 100;
         public string TcpHost { get; set; } = "localhost";
         public int TcpPort { get; set; } = 9999;
         public string NamedPipeName { get; set; } = "TradingDataPipe";
@@ -114,7 +114,7 @@ namespace TradingDataSimulator
         }
 
         /// <summary>
-        /// Runs TCP-based data simulation
+        /// Runs TCP-based data simulation with batching for high throughput
         /// </summary>
         private async Task RunTcpSimulationAsync(CancellationToken cancellationToken)
         {
@@ -124,26 +124,38 @@ namespace TradingDataSimulator
                 await tcpClient.ConnectAsync(TcpHost, TcpPort);
                 using var stream = tcpClient.GetStream();
                 Console.WriteLine($"Connected to TCP server at {TcpHost}:{TcpPort}");
-                var targetIntervalMs = 1000.0 / MessagesPerSecond;
-                var lastSendTime = DateTime.UtcNow;
+
+                var batchSize = Math.Max(1, MessagesPerSecond / 10); // ~10ms worth
+                var interval = TimeSpan.FromMilliseconds(1000.0 * batchSize / MessagesPerSecond);
+
+                var buffer = new List<byte>(batchSize * 512); // pre-allocate ~512B/message
+                var stopwatch = new System.Diagnostics.Stopwatch();
+                stopwatch.Start();
+
                 while (!cancellationToken.IsCancellationRequested && tcpClient.Connected)
                 {
-                    var now = DateTime.UtcNow;
-                    var elapsed = (now - lastSendTime).TotalMilliseconds;
-                    if (elapsed >= targetIntervalMs)
+                    buffer.Clear();
+
+                    // generate batch
+                    for (int i = 0; i < batchSize; i++)
                     {
-                        var message = GenerateMessage();
-                        var messageBytes = Encoding.UTF8.GetBytes(message + "\n");
-                        await stream.WriteAsync(messageBytes, 0, messageBytes.Length, cancellationToken);
-                        await stream.FlushAsync(cancellationToken);
-                        Interlocked.Increment(ref _messagesSent);
-                        lastSendTime = now;
+                        var message = GenerateMessage() + "\n";
+                        var msgBytes = Encoding.UTF8.GetBytes(message);
+                        buffer.AddRange(msgBytes);
                     }
-                    else
+
+                    // write batch
+                    await stream.WriteAsync(buffer.ToArray(), 0, buffer.Count, cancellationToken);
+                    await stream.FlushAsync(cancellationToken);
+                    Interlocked.Add(ref _messagesSent, batchSize);
+
+                    // pacing
+                    var elapsed = stopwatch.Elapsed;
+                    if (elapsed < interval)
                     {
-                        var sleepTime = Math.Max(1, (int)(targetIntervalMs - elapsed));
-                        await Task.Delay(sleepTime, cancellationToken);
+                        await Task.Delay(interval - elapsed, cancellationToken);
                     }
+                    stopwatch.Restart();
                 }
             }
             catch (OperationCanceledException) { }
@@ -153,35 +165,85 @@ namespace TradingDataSimulator
             }
         }
 
+        //private async Task RunTcpSimulationAsync(CancellationToken cancellationToken)
+        //{
+        //    try
+        //    {
+        //        using var tcpClient = new TcpClient();
+        //        await tcpClient.ConnectAsync(TcpHost, TcpPort);
+        //        using var stream = tcpClient.GetStream();
+        //        Console.WriteLine($"Connected to TCP server at {TcpHost}:{TcpPort}");
+        //        var targetIntervalMs = 1000.0 / MessagesPerSecond;
+        //        var lastSendTime = DateTime.UtcNow;
+        //        while (!cancellationToken.IsCancellationRequested && tcpClient.Connected)
+        //        {
+        //            var now = DateTime.UtcNow;
+        //            var elapsed = (now - lastSendTime).TotalMilliseconds;
+        //            if (elapsed >= targetIntervalMs)
+        //            {
+        //                var message = GenerateMessage();
+        //                var messageBytes = Encoding.UTF8.GetBytes(message + "\n");
+        //                await stream.WriteAsync(messageBytes, 0, messageBytes.Length, cancellationToken);
+        //                await stream.FlushAsync(cancellationToken);
+        //                Interlocked.Increment(ref _messagesSent);
+        //                lastSendTime = now;
+        //            }
+        //            else
+        //            {
+        //                var sleepTime = Math.Max(1, (int)(targetIntervalMs - elapsed));
+        //                await Task.Delay(sleepTime, cancellationToken);
+        //            }
+        //        }
+        //    }
+        //    catch (OperationCanceledException) { }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"TCP simulation error: {ex.Message}");
+        //    }
+        //}
+
         /// <summary>
-        /// Runs Named Pipe-based data simulation
+        /// Runs Named Pipe–based data simulation with batching for high throughput
         /// </summary>
         private async Task RunNamedPipeSimulationAsync(CancellationToken cancellationToken)
         {
             try
             {
-                using var pipeClient = new NamedPipeClientStream(".", NamedPipeName, PipeDirection.Out);
-                await pipeClient.ConnectAsync(5000, cancellationToken);
-                using var writer = new StreamWriter(pipeClient) { AutoFlush = true };
-                Console.WriteLine($"Connected to Named Pipe: {NamedPipeName}");
-                var targetIntervalMs = 1000.0 / MessagesPerSecond;
-                var lastSendTime = DateTime.UtcNow;
+                using var pipeClient = new NamedPipeClientStream(".", NamedPipeName, PipeDirection.Out, PipeOptions.Asynchronous);
+                await pipeClient.ConnectAsync(cancellationToken);
+                Console.WriteLine($"Connected to Named Pipe server at {NamedPipeName}");
+
+                var batchSize = Math.Max(1, MessagesPerSecond / 100); // ~10ms worth
+                var interval = TimeSpan.FromMilliseconds(1000.0 * batchSize / MessagesPerSecond);
+
+                var buffer = new List<byte>(batchSize * 512); // pre-allocate ~512B/message
+                var stopwatch = new System.Diagnostics.Stopwatch();
+                stopwatch.Start();
+
                 while (!cancellationToken.IsCancellationRequested && pipeClient.IsConnected)
                 {
-                    var now = DateTime.UtcNow;
-                    var elapsed = (now - lastSendTime).TotalMilliseconds;
-                    if (elapsed >= targetIntervalMs)
+                    buffer.Clear();
+
+                    // generate batch
+                    for (int i = 0; i < batchSize; i++)
                     {
-                        var message = GenerateMessage();
-                        await writer.WriteLineAsync(message);
-                        Interlocked.Increment(ref _messagesSent);
-                        lastSendTime = now;
+                        var message = GenerateMessage() + "\n";
+                        var msgBytes = Encoding.UTF8.GetBytes(message);
+                        buffer.AddRange(msgBytes);
                     }
-                    else
+
+                    // write batch
+                    await pipeClient.WriteAsync(buffer.ToArray(), 0, buffer.Count, cancellationToken);
+                    await pipeClient.FlushAsync(cancellationToken);
+                    Interlocked.Add(ref _messagesSent, batchSize);
+
+                    // pacing
+                    var elapsed = stopwatch.Elapsed;
+                    if (elapsed < interval)
                     {
-                        var sleepTime = Math.Max(1, (int)(targetIntervalMs - elapsed));
-                        await Task.Delay(sleepTime, cancellationToken);
+                        await Task.Delay(interval - elapsed, cancellationToken);
                     }
+                    stopwatch.Restart();
                 }
             }
             catch (OperationCanceledException) { }
@@ -190,6 +252,7 @@ namespace TradingDataSimulator
                 Console.WriteLine($"Named Pipe simulation error: {ex.Message}");
             }
         }
+
 
         /// <summary>
         /// Generates a realistic trading message with Insert, Update, or Delete

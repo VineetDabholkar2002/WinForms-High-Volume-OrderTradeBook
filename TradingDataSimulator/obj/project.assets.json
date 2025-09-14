@@ -108,11 +108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\TradingDataSimulator.csproj",
+      "projectUniqueName": "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataSimulator\\TradingDataSimulator.csproj",
       "projectName": "TradingDataSimulator",
-      "projectPath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\TradingDataSimulator.csproj",
+      "projectPath": "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataSimulator\\TradingDataSimulator.csproj",
       "packagesPath": "C:\\Users\\vinee\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vinee\\Downloads\\TradingSimulator\\TradingDataSimulator\\obj\\",
+      "outputPath": "C:\\Users\\vinee\\Desktop\\Work\\Projects\\WinForms-High-Volume-OrderTradeBook\\TradingDataSimulator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

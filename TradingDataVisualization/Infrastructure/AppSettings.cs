@@ -34,7 +34,7 @@ namespace TradingDataVisualization.Infrastructure
         /// <summary>
         /// UI refresh rate cap (frames per second)
         /// </summary>
-        public int MaxRefreshRateFps { get; set; } = 60;
+        public int MaxRefreshRateFps { get; set; } = 45;
         public int UiUpdateIntervalMs
         {
             get => (int)(1000.0 / MaxRefreshRateFps);
