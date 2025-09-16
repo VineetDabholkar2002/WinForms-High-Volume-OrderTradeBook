@@ -43,16 +43,12 @@ TradingDataVisualization/
 │   └── TradeBookEntry.cs          # Trade book data model
 ├── Workers/
 │   ├── IngestWorker.cs            # Background data ingestion
-│   ├── GridRenderer.cs            # UI rendering optimization
 │   └── MetricsLogger.cs           # Performance tracking and CSV logging
 ├── Infrastructure/
-│   ├── PerformanceMetrics.cs      # Metrics calculation and aggregation
-│   ├── SearchManager.cs           # Search functionality
-│   ├── TcpMessageHandler.cs       # TCP communication handler
 │   └── AppSettings.cs             # Configuration management
 ├── Logs
 │   ├── ILogger.cs
-│  	├── FileLogger.cs
+│   ├── FileLogger.cs
 │  	
 TradingDataSimulator/
 ├── DataSimulator.cs           # High-performance data generator
